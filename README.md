@@ -21,8 +21,10 @@ Assuming you have [oscar64](https://github.com/drmortalwombat/oscar64)
 installed and in your path, you should get five .prg files in the
 build subdirectory. Copy them onto the SD card and load thusly:
 
+```
 LOAD"DIGGER.PRG",8,1
 RUN
+```
 
 Enjoy!
 
@@ -35,6 +37,8 @@ Enjoy!
 
 # AI Statement
 
-No AI assistance was used for this port. I believe the use of AI weakens
+No AI assistance was used for this port.
+
+I believe the use of AI weakens
 our skills and will result in a future even more similar to Idiocracy than
 it currently does.

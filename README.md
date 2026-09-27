@@ -12,7 +12,7 @@
 ![main](/digger_main.png)
 ![level1](/digger_level_1.png)
 
-This release is a port of the IBM PC/XT game DIGGER by Windmill software.
+This release is a port of the IBM PC/XT game [DIGGER](https://www.digger.org) by Windmill software.
 
 As the copyright holder of the original DIGGER game could not be contacted,
 this game is being released as a patch against the original sources.

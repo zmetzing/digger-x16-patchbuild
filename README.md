@@ -4,7 +4,7 @@
 
 	    for Commander X16
 
-	    Beta Release 1.0
+	    Beta Release 1.1
 
 	    ported by Zach Metzinger, 2026
 
@@ -26,13 +26,15 @@ LOAD"DIGGER.PRG",8,1
 RUN
 ```
 
+Joystick support has been added, but may be a bit flakey.
+
+Two-player mode can be toggled with the ESC key at the intro screen.
+
 Enjoy!
 
 # TODO
 
- - Two player mode can't be enabled, but this will be fixed soon.
  - There is no music nor are there sound effects. Also on the list to fix.
- - No joystick (joypad) control -- you guessed it: on the list to fix.
  - Fix bugs. Probably a few in there. I don't claim to be an expert, be kind.
 
 # AI Statement

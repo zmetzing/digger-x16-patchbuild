@@ -35,7 +35,7 @@ clean:
 digger-x16:
 	stat src/x16_memory.c > /dev/null || make patchdist
 	mkdir -p build
-	oscar64 -O2 -tm=x16 \
+	oscar64 -O2 -tm=x16 -rmp \
 		-i=inc \
 		-i=inc/windmill \
 		-i=inc/windmill/sprites \
@@ -47,6 +47,7 @@ digger-x16:
 		src/sound.c \
 		src/stubs.c \
 		src/cutil.c \
+		src/dbg_l1.c \
 		src/windmill/clib.c \
 		src/windmill/image.c \
 		src/windmill/image_b.c \

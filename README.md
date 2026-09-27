@@ -1,12 +1,16 @@
 # DIGGER
-
+```
 	    D I G G E R
 
 	    for Commander X16
 
-	    Beta Release 1.1
+	    Beta Release 1.2
 
 	    ported by Zach Metzinger, 2026
+```
+
+![main](digger_main.png)
+![level1](digger_level_1.png)
 
 This release is a port of the IBM PC/XT game DIGGER by Windmill software.
 
@@ -34,13 +38,12 @@ Enjoy!
 
 # TODO
 
- - There is no music nor are there sound effects. Also on the list to fix.
+ - There is no music nor are there sound effects.
  - Fix bugs. Probably a few in there. I don't claim to be an expert, be kind.
 
 # AI Statement
 
 No AI assistance was used for this port.
 
-I believe the use of AI weakens
-our skills and will result in a future even more similar to Idiocracy than
-it currently does.
+I believe the use of AI weakens our skills and will result in a future
+even more similar to Idiocracy than it currently does.

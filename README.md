@@ -9,8 +9,8 @@
 	    ported by Zach Metzinger, 2026
 ```
 
-![main](digger_main.png)
-![level1](digger_level_1.png)
+![main](/digger_main.png)
+![level1](/digger_level_1.png)
 
 This release is a port of the IBM PC/XT game DIGGER by Windmill software.
 

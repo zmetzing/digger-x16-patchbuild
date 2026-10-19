@@ -4,7 +4,7 @@
 
 	    for Commander X16
 
-	    Beta Release 1.2
+	    Beta Release 1.3
 
 	    ported by Zach Metzinger, 2026
 ```
@@ -36,9 +36,15 @@ Two-player mode can be toggled with the ESC key at the intro screen.
 
 Enjoy!
 
+# Known bugs (to be fixed)
+
+ - Nobbins can sometimes pass through the dirt between two adjacent tunnels.
+ - Death march timing is off
+
 # TODO
 
- - There is no music nor are there sound effects.
+ - Music is still very much "in-work", but it is no longer a silent game!
+ - Sound effects are next on the list.
  - Fix bugs. Probably a few in there. I don't claim to be an expert, be kind.
 
 # AI Statement

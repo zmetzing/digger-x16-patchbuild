@@ -28,7 +28,7 @@
 all: digger-x16
 
 clean:
-	rm -rf build tmp
+	rm -rf build tmp *.core
 
 # BEWARE: x16_memory.c must be the first file, as it sets up memory regions
 # If the file src/x16_memory.c doesn't exist, try to build from patched original sources

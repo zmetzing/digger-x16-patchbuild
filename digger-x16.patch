@@ -521,10 +521,10 @@ diff -c -r --strip-trailing-cr -N tmp/inc/keyxlate.h inc/keyxlate.h
 + #endif
 diff -c -r --strip-trailing-cr -N tmp/inc/notes_x16.h inc/notes_x16.h
 *** tmp/inc/notes_x16.h	Wed Dec 31 18:00:00 1969
---- inc/notes_x16.h	Mon Oct 12 23:19:46 2026
+--- inc/notes_x16.h	Tue Oct 20 10:48:27 2026
 ***************
 *** 0 ****
---- 1,61 ----
+--- 1,64 ----
 + /*-
 +  *
 +  * Copyright (c) 2026 Zach Metzinger
@@ -553,10 +553,13 @@ diff -c -r --strip-trailing-cr -N tmp/inc/notes_x16.h inc/notes_x16.h
 +  */
 + 
 + #define NS   6
-+ #define	NE  12
-+ #define	NQ  24
-+ #define	NH  48
-+ #define	NW  96
++ #define NE  12
++ #define NQ  24
++ #define NQH 36
++ #define NH  48
++ #define NHH 60
++ #define NWL 72
++ #define NW  96
 + 
 + #define REST   0
 + 
@@ -1591,7 +1594,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/tz.h inc/tz.h
 + 
 + #endif
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__0.chr inc/windmill/chars/char__0.chr
-*** tmp/inc/windmill/chars/char__0.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__0.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__0.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1607,7 +1610,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__0.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__1.chr inc/windmill/chars/char__1.chr
-*** tmp/inc/windmill/chars/char__1.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__1.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__1.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1623,7 +1626,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__1.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__2.chr inc/windmill/chars/char__2.chr
-*** tmp/inc/windmill/chars/char__2.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__2.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__2.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1639,7 +1642,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__2.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__3.chr inc/windmill/chars/char__3.chr
-*** tmp/inc/windmill/chars/char__3.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__3.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__3.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1655,7 +1658,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__3.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__4.chr inc/windmill/chars/char__4.chr
-*** tmp/inc/windmill/chars/char__4.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__4.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__4.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1671,7 +1674,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__4.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__5.chr inc/windmill/chars/char__5.chr
-*** tmp/inc/windmill/chars/char__5.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__5.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__5.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1687,7 +1690,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__5.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__6.chr inc/windmill/chars/char__6.chr
-*** tmp/inc/windmill/chars/char__6.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__6.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__6.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1703,7 +1706,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__6.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__7.chr inc/windmill/chars/char__7.chr
-*** tmp/inc/windmill/chars/char__7.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__7.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__7.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1719,7 +1722,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__7.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__8.chr inc/windmill/chars/char__8.chr
-*** tmp/inc/windmill/chars/char__8.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__8.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__8.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1735,7 +1738,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__8.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__9.chr inc/windmill/chars/char__9.chr
-*** tmp/inc/windmill/chars/char__9.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__9.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__9.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1751,7 +1754,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__9.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__a.chr inc/windmill/chars/char__a.chr
-*** tmp/inc/windmill/chars/char__a.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__a.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__a.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1767,7 +1770,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__a.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__b.chr inc/windmill/chars/char__b.chr
-*** tmp/inc/windmill/chars/char__b.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__b.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__b.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1783,7 +1786,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__b.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__c.chr inc/windmill/chars/char__c.chr
-*** tmp/inc/windmill/chars/char__c.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__c.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__c.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1799,7 +1802,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__c.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__d.chr inc/windmill/chars/char__d.chr
-*** tmp/inc/windmill/chars/char__d.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__d.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__d.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1815,7 +1818,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__d.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__e.chr inc/windmill/chars/char__e.chr
-*** tmp/inc/windmill/chars/char__e.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__e.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__e.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1831,7 +1834,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__e.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__f.chr inc/windmill/chars/char__f.chr
-*** tmp/inc/windmill/chars/char__f.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__f.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__f.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1847,7 +1850,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__f.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__g.chr inc/windmill/chars/char__g.chr
-*** tmp/inc/windmill/chars/char__g.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__g.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__g.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1863,7 +1866,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__g.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__h.chr inc/windmill/chars/char__h.chr
-*** tmp/inc/windmill/chars/char__h.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__h.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__h.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1879,7 +1882,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__h.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__i.chr inc/windmill/chars/char__i.chr
-*** tmp/inc/windmill/chars/char__i.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__i.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__i.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1895,7 +1898,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__i.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__j.chr inc/windmill/chars/char__j.chr
-*** tmp/inc/windmill/chars/char__j.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__j.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__j.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1911,7 +1914,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__j.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__k.chr inc/windmill/chars/char__k.chr
-*** tmp/inc/windmill/chars/char__k.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__k.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__k.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1927,7 +1930,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__k.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__l.chr inc/windmill/chars/char__l.chr
-*** tmp/inc/windmill/chars/char__l.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__l.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__l.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1943,7 +1946,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__l.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__m.chr inc/windmill/chars/char__m.chr
-*** tmp/inc/windmill/chars/char__m.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__m.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__m.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1959,7 +1962,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__m.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__n.chr inc/windmill/chars/char__n.chr
-*** tmp/inc/windmill/chars/char__n.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__n.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__n.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1975,7 +1978,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__n.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__o.chr inc/windmill/chars/char__o.chr
-*** tmp/inc/windmill/chars/char__o.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__o.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__o.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -1991,7 +1994,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__o.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__p.chr inc/windmill/chars/char__p.chr
-*** tmp/inc/windmill/chars/char__p.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__p.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__p.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -2007,7 +2010,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__p.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__pe.chr inc/windmill/chars/char__pe.chr
-*** tmp/inc/windmill/chars/char__pe.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__pe.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__pe.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,52 ****
@@ -2021,7 +2024,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__pe.chr inc/windmi
 - 			  0,  0,  0,
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__q.chr inc/windmill/chars/char__q.chr
-*** tmp/inc/windmill/chars/char__q.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__q.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__q.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -2037,7 +2040,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__q.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__r.chr inc/windmill/chars/char__r.chr
-*** tmp/inc/windmill/chars/char__r.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__r.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__r.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -2053,7 +2056,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__r.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__s.chr inc/windmill/chars/char__s.chr
-*** tmp/inc/windmill/chars/char__s.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__s.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__s.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -2069,7 +2072,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__s.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__sp.chr inc/windmill/chars/char__sp.chr
-*** tmp/inc/windmill/chars/char__sp.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__sp.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__sp.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,52 ****
@@ -2083,7 +2086,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__sp.chr inc/windmi
 - 			  0,  0,  0,
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__t.chr inc/windmill/chars/char__t.chr
-*** tmp/inc/windmill/chars/char__t.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__t.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__t.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -2099,7 +2102,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__t.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__u.chr inc/windmill/chars/char__u.chr
-*** tmp/inc/windmill/chars/char__u.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__u.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__u.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -2115,7 +2118,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__u.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__ul.chr inc/windmill/chars/char__ul.chr
-*** tmp/inc/windmill/chars/char__ul.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__ul.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__ul.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,52 ****
@@ -2129,7 +2132,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__ul.chr inc/windmi
 - 			  0,  0,  0,
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__v.chr inc/windmill/chars/char__v.chr
-*** tmp/inc/windmill/chars/char__v.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__v.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__v.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -2145,7 +2148,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__v.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__w.chr inc/windmill/chars/char__w.chr
-*** tmp/inc/windmill/chars/char__w.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__w.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__w.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -2161,7 +2164,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__w.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__x.chr inc/windmill/chars/char__x.chr
-*** tmp/inc/windmill/chars/char__x.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__x.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__x.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -2177,7 +2180,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__x.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__y.chr inc/windmill/chars/char__y.chr
-*** tmp/inc/windmill/chars/char__y.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__y.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__y.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -2193,7 +2196,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__y.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__z.chr inc/windmill/chars/char__z.chr
-*** tmp/inc/windmill/chars/char__z.chr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/chars/char__z.chr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/chars/char__z.chr	Tue Sep  8 09:50:42 2026
 ***************
 *** 45,53 ****
@@ -2209,7 +2212,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/chars/char__z.chr inc/windmil
 \ No newline at end of file
 --- 45,47 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/digger.h inc/windmill/digger.h
-*** tmp/inc/windmill/digger.h	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/digger.h	Tue Oct 20 11:22:14 2026
 --- inc/windmill/digger.h	Tue Sep  8 09:50:42 2026
 ***************
 *** 1,3 ****
@@ -2271,7 +2274,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/digger.h inc/windmill/digger.
 ! 
 ! #endif
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/notes.h inc/windmill/notes.h
-*** tmp/inc/windmill/notes.h	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/notes.h	Tue Oct 20 11:22:14 2026
 --- inc/windmill/notes.h	Mon Oct 12 23:19:46 2026
 ***************
 *** 1,4 ****
@@ -2299,7 +2302,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/notes.h inc/windmill/notes.h
   #define		REST	32000
 ! #endif
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprite0.spr inc/windmill/sprites/sprite0.spr
-*** tmp/inc/windmill/sprites/sprite0.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprite0.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprite0.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2359,7 +2362,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprite0.spr inc/windm
   #define X_WID_0 4 
   #define Y_WID_0 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprite1.spr inc/windmill/sprites/sprite1.spr
-*** tmp/inc/windmill/sprites/sprite1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprite1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprite1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2419,7 +2422,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprite1.spr inc/windm
   #define X_WID_1 4 
   #define Y_WID_1 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprite15.spr inc/windmill/sprites/sprite15.spr
-*** tmp/inc/windmill/sprites/sprite15.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprite15.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprite15.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2476,7 +2479,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprite15.spr inc/wind
   #define X_WID_15 2 
   #define Y_WID_15 7 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritea0.spr inc/windmill/sprites/spritea0.spr
-*** tmp/inc/windmill/sprites/spritea0.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritea0.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritea0.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2536,7 +2539,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritea0.spr inc/wind
   #define X_WID_a0 4 
   #define Y_WID_a0 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritea1.spr inc/windmill/sprites/spritea1.spr
-*** tmp/inc/windmill/sprites/spritea1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritea1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritea1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2596,7 +2599,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritea1.spr inc/wind
   #define X_WID_a1 4 
   #define Y_WID_a1 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritea2.spr inc/windmill/sprites/spritea2.spr
-*** tmp/inc/windmill/sprites/spritea2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritea2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritea2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2656,7 +2659,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritea2.spr inc/wind
   #define X_WID_a2 4 
   #define Y_WID_a2 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritea3.spr inc/windmill/sprites/spritea3.spr
-*** tmp/inc/windmill/sprites/spritea3.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritea3.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritea3.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2719,7 +2722,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritea3.spr inc/wind
   #define X_WID_a3 4 
   #define Y_WID_a3 14 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb3.spr inc/windmill/sprites/spriteb3.spr
-*** tmp/inc/windmill/sprites/spriteb3.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteb3.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteb3.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2776,7 +2779,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb3.spr inc/wind
   #define X_WID_b3 2 
   #define Y_WID_b3 7 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb4.spr inc/windmill/sprites/spriteb4.spr
-*** tmp/inc/windmill/sprites/spriteb4.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteb4.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteb4.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2821,7 +2824,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb4.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb5.spr inc/windmill/sprites/spriteb5.spr
-*** tmp/inc/windmill/sprites/spriteb5.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteb5.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteb5.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2866,7 +2869,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb5.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb6.spr inc/windmill/sprites/spriteb6.spr
-*** tmp/inc/windmill/sprites/spriteb6.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteb6.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteb6.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2911,7 +2914,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb6.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb7.spr inc/windmill/sprites/spriteb7.spr
-*** tmp/inc/windmill/sprites/spriteb7.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteb7.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteb7.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -2956,7 +2959,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb7.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb8.spr inc/windmill/sprites/spriteb8.spr
-*** tmp/inc/windmill/sprites/spriteb8.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteb8.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteb8.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3001,7 +3004,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb8.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb9.spr inc/windmill/sprites/spriteb9.spr
-*** tmp/inc/windmill/sprites/spriteb9.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteb9.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteb9.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3046,7 +3049,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteb9.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritebd.spr inc/windmill/sprites/spritebd.spr
-*** tmp/inc/windmill/sprites/spritebd.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritebd.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritebd.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3091,7 +3094,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritebd.spr inc/wind
 \ No newline at end of file
 --- 56,58 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritebf.spr inc/windmill/sprites/spritebf.spr
-*** tmp/inc/windmill/sprites/spritebf.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritebf.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritebf.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3136,7 +3139,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritebf.spr inc/wind
 \ No newline at end of file
 --- 52,54 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritec0.spr inc/windmill/sprites/spritec0.spr
-*** tmp/inc/windmill/sprites/spritec0.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritec0.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritec0.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3196,7 +3199,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritec0.spr inc/wind
   #define X_WID_c0 4 
   #define Y_WID_c0 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritec1.spr inc/windmill/sprites/spritec1.spr
-*** tmp/inc/windmill/sprites/spritec1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritec1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritec1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3256,7 +3259,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritec1.spr inc/wind
   #define X_WID_c1 4 
   #define Y_WID_c1 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritec2.spr inc/windmill/sprites/spritec2.spr
-*** tmp/inc/windmill/sprites/spritec2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritec2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritec2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3316,7 +3319,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritec2.spr inc/wind
   #define X_WID_c2 4 
   #define Y_WID_c2 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritec3.spr inc/windmill/sprites/spritec3.spr
-*** tmp/inc/windmill/sprites/spritec3.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritec3.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritec3.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3376,7 +3379,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritec3.spr inc/wind
   #define X_WID_c3 4 
   #define Y_WID_c3 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritecn.spr inc/windmill/sprites/spritecn.spr
-*** tmp/inc/windmill/sprites/spritecn.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritecn.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritecn.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3433,7 +3436,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritecn.spr inc/wind
   #define X_WID_cn 4 
   #define Y_WID_cn 10 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited0.spr inc/windmill/sprites/sprited0.spr
-*** tmp/inc/windmill/sprites/sprited0.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprited0.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprited0.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3478,7 +3481,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited0.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited1.spr inc/windmill/sprites/sprited1.spr
-*** tmp/inc/windmill/sprites/sprited1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprited1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprited1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3523,7 +3526,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited1.spr inc/wind
 \ No newline at end of file
 --- 69,71 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited2.spr inc/windmill/sprites/sprited2.spr
-*** tmp/inc/windmill/sprites/sprited2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprited2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprited2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3568,7 +3571,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited2.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited4.spr inc/windmill/sprites/sprited4.spr
-*** tmp/inc/windmill/sprites/sprited4.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprited4.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprited4.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3613,7 +3616,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited4.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited5.spr inc/windmill/sprites/sprited5.spr
-*** tmp/inc/windmill/sprites/sprited5.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprited5.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprited5.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3658,7 +3661,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited5.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited6.spr inc/windmill/sprites/sprited6.spr
-*** tmp/inc/windmill/sprites/sprited6.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprited6.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprited6.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3703,7 +3706,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprited6.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritedn.spr inc/windmill/sprites/spritedn.spr
-*** tmp/inc/windmill/sprites/spritedn.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritedn.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritedn.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3748,7 +3751,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritedn.spr inc/wind
 \ No newline at end of file
 --- 52,54 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritee1.spr inc/windmill/sprites/spritee1.spr
-*** tmp/inc/windmill/sprites/spritee1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritee1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritee1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3793,7 +3796,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritee1.spr inc/wind
 \ No newline at end of file
 --- 54,56 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritee2.spr inc/windmill/sprites/spritee2.spr
-*** tmp/inc/windmill/sprites/spritee2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritee2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritee2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3838,7 +3841,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritee2.spr inc/wind
 \ No newline at end of file
 --- 54,56 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritee3.spr inc/windmill/sprites/spritee3.spr
-*** tmp/inc/windmill/sprites/spritee3.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritee3.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritee3.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3883,7 +3886,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritee3.spr inc/wind
 \ No newline at end of file
 --- 54,56 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef1.spr inc/windmill/sprites/spritef1.spr
-*** tmp/inc/windmill/sprites/spritef1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritef1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritef1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3928,7 +3931,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef1.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef2.spr inc/windmill/sprites/spritef2.spr
-*** tmp/inc/windmill/sprites/spritef2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritef2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritef2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -3973,7 +3976,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef2.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef3.spr inc/windmill/sprites/spritef3.spr
-*** tmp/inc/windmill/sprites/spritef3.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritef3.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritef3.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4018,7 +4021,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef3.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef4.spr inc/windmill/sprites/spritef4.spr
-*** tmp/inc/windmill/sprites/spritef4.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritef4.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritef4.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4063,7 +4066,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef4.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef5.spr inc/windmill/sprites/spritef5.spr
-*** tmp/inc/windmill/sprites/spritef5.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritef5.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritef5.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4108,7 +4111,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef5.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef9.spr inc/windmill/sprites/spritef9.spr
-*** tmp/inc/windmill/sprites/spritef9.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritef9.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritef9.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4153,7 +4156,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritef9.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritek1.spr inc/windmill/sprites/spritek1.spr
-*** tmp/inc/windmill/sprites/spritek1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritek1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritek1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4198,7 +4201,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritek1.spr inc/wind
 \ No newline at end of file
 --- 54,56 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritek2.spr inc/windmill/sprites/spritek2.spr
-*** tmp/inc/windmill/sprites/spritek2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritek2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritek2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4243,7 +4246,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritek2.spr inc/wind
 \ No newline at end of file
 --- 54,56 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel0.spr inc/windmill/sprites/spritel0.spr
-*** tmp/inc/windmill/sprites/spritel0.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritel0.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritel0.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4288,7 +4291,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel0.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel1.spr inc/windmill/sprites/spritel1.spr
-*** tmp/inc/windmill/sprites/spritel1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritel1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritel1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4333,7 +4336,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel1.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel2.spr inc/windmill/sprites/spritel2.spr
-*** tmp/inc/windmill/sprites/spritel2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritel2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritel2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4378,7 +4381,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel2.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel4.spr inc/windmill/sprites/spritel4.spr
-*** tmp/inc/windmill/sprites/spritel4.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritel4.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritel4.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4423,7 +4426,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel4.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel5.spr inc/windmill/sprites/spritel5.spr
-*** tmp/inc/windmill/sprites/spritel5.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritel5.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritel5.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4468,7 +4471,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel5.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel6.spr inc/windmill/sprites/spritel6.spr
-*** tmp/inc/windmill/sprites/spritel6.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritel6.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritel6.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4513,7 +4516,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritel6.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritelt.spr inc/windmill/sprites/spritelt.spr
-*** tmp/inc/windmill/sprites/spritelt.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritelt.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritelt.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4558,7 +4561,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritelt.spr inc/wind
 \ No newline at end of file
 --- 76,78 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritem0.spr inc/windmill/sprites/spritem0.spr
-*** tmp/inc/windmill/sprites/spritem0.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritem0.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritem0.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4603,7 +4606,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritem0.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritem1.spr inc/windmill/sprites/spritem1.spr
-*** tmp/inc/windmill/sprites/spritem1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritem1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritem1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4648,7 +4651,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritem1.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritem2.spr inc/windmill/sprites/spritem2.spr
-*** tmp/inc/windmill/sprites/spritem2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritem2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritem2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4693,7 +4696,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritem2.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritem3.spr inc/windmill/sprites/spritem3.spr
-*** tmp/inc/windmill/sprites/spritem3.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritem3.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritem3.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4753,7 +4756,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritem3.spr inc/wind
   #define X_WID_m3 4 
   #define Y_WID_m3 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritenc.spr inc/windmill/sprites/spritenc.spr
-*** tmp/inc/windmill/sprites/spritenc.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritenc.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritenc.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -4798,7 +4801,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritenc.spr inc/wind
 \ No newline at end of file
 --- 60,62 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep1.spr inc/windmill/sprites/spritep1.spr
-*** tmp/inc/windmill/sprites/spritep1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritep1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritep1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,45 ****
@@ -4840,7 +4843,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep1.spr inc/wind
 \ No newline at end of file
 --- 48,50 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep2.spr inc/windmill/sprites/spritep2.spr
-*** tmp/inc/windmill/sprites/spritep2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritep2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritep2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,45 ****
@@ -4882,7 +4885,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep2.spr inc/wind
 \ No newline at end of file
 --- 48,50 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep3.spr inc/windmill/sprites/spritep3.spr
-*** tmp/inc/windmill/sprites/spritep3.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritep3.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritep3.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,45 ****
@@ -4924,7 +4927,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep3.spr inc/wind
 \ No newline at end of file
 --- 48,50 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep4.spr inc/windmill/sprites/spritep4.spr
-*** tmp/inc/windmill/sprites/spritep4.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritep4.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritep4.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,45 ****
@@ -4966,7 +4969,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep4.spr inc/wind
 \ No newline at end of file
 --- 48,50 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep5.spr inc/windmill/sprites/spritep5.spr
-*** tmp/inc/windmill/sprites/spritep5.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritep5.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritep5.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,45 ****
@@ -5008,7 +5011,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep5.spr inc/wind
 \ No newline at end of file
 --- 48,50 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep6.spr inc/windmill/sprites/spritep6.spr
-*** tmp/inc/windmill/sprites/spritep6.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritep6.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritep6.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,45 ****
@@ -5050,7 +5053,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep6.spr inc/wind
 \ No newline at end of file
 --- 48,50 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep7.spr inc/windmill/sprites/spritep7.spr
-*** tmp/inc/windmill/sprites/spritep7.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritep7.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritep7.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,45 ****
@@ -5092,7 +5095,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep7.spr inc/wind
 \ No newline at end of file
 --- 48,50 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep8.spr inc/windmill/sprites/spritep8.spr
-*** tmp/inc/windmill/sprites/spritep8.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritep8.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritep8.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,45 ****
@@ -5134,7 +5137,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritep8.spr inc/wind
 \ No newline at end of file
 --- 48,50 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter0.spr inc/windmill/sprites/spriter0.spr
-*** tmp/inc/windmill/sprites/spriter0.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriter0.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriter0.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5179,7 +5182,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter0.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter1.spr inc/windmill/sprites/spriter1.spr
-*** tmp/inc/windmill/sprites/spriter1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriter1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriter1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5224,7 +5227,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter1.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter2.spr inc/windmill/sprites/spriter2.spr
-*** tmp/inc/windmill/sprites/spriter2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriter2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriter2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5269,7 +5272,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter2.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter4.spr inc/windmill/sprites/spriter4.spr
-*** tmp/inc/windmill/sprites/spriter4.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriter4.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriter4.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5314,7 +5317,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter4.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter5.spr inc/windmill/sprites/spriter5.spr
-*** tmp/inc/windmill/sprites/spriter5.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriter5.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriter5.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5359,7 +5362,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter5.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter6.spr inc/windmill/sprites/spriter6.spr
-*** tmp/inc/windmill/sprites/spriter6.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriter6.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriter6.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5404,7 +5407,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriter6.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritert.spr inc/windmill/sprites/spritert.spr
-*** tmp/inc/windmill/sprites/spritert.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritert.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritert.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5449,7 +5452,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritert.spr inc/wind
 \ No newline at end of file
 --- 76,78 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprites0.spr inc/windmill/sprites/sprites0.spr
-*** tmp/inc/windmill/sprites/sprites0.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprites0.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprites0.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5494,7 +5497,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprites0.spr inc/wind
 \ No newline at end of file
 --- 64,66 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprites1.spr inc/windmill/sprites/sprites1.spr
-*** tmp/inc/windmill/sprites/sprites1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprites1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprites1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5539,7 +5542,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprites1.spr inc/wind
 \ No newline at end of file
 --- 64,66 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprites2.spr inc/windmill/sprites/sprites2.spr
-*** tmp/inc/windmill/sprites/sprites2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/sprites2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/sprites2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5584,7 +5587,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/sprites2.spr inc/wind
 \ No newline at end of file
 --- 64,66 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu0.spr inc/windmill/sprites/spriteu0.spr
-*** tmp/inc/windmill/sprites/spriteu0.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteu0.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteu0.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5629,7 +5632,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu0.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu1.spr inc/windmill/sprites/spriteu1.spr
-*** tmp/inc/windmill/sprites/spriteu1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteu1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteu1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5689,7 +5692,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu1.spr inc/wind
   #define X_WID_u1 4 
   #define Y_WID_u1 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu2.spr inc/windmill/sprites/spriteu2.spr
-*** tmp/inc/windmill/sprites/spriteu2.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteu2.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteu2.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5734,7 +5737,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu2.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu4.spr inc/windmill/sprites/spriteu4.spr
-*** tmp/inc/windmill/sprites/spriteu4.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteu4.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteu4.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5779,7 +5782,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu4.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu5.spr inc/windmill/sprites/spriteu5.spr
-*** tmp/inc/windmill/sprites/spriteu5.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteu5.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteu5.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5839,7 +5842,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu5.spr inc/wind
   #define X_WID_u5 4 
   #define Y_WID_u5 15 
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu6.spr inc/windmill/sprites/spriteu6.spr
-*** tmp/inc/windmill/sprites/spriteu6.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteu6.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteu6.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5884,7 +5887,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteu6.spr inc/wind
 \ No newline at end of file
 --- 70,72 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteup.spr inc/windmill/sprites/spriteup.spr
-*** tmp/inc/windmill/sprites/spriteup.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spriteup.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spriteup.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -5929,7 +5932,7 @@ diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spriteup.spr inc/wind
 \ No newline at end of file
 --- 52,54 ----
 diff -c -r --strip-trailing-cr -N tmp/inc/windmill/sprites/spritez1.spr inc/windmill/sprites/spritez1.spr
-*** tmp/inc/windmill/sprites/spritez1.spr	Mon Oct 19 14:40:41 2026
+*** tmp/inc/windmill/sprites/spritez1.spr	Tue Oct 20 11:22:14 2026
 --- inc/windmill/sprites/spritez1.spr	Tue Sep  8 09:50:42 2026
 ***************
 *** 32,38 ****
@@ -6685,10 +6688,10 @@ diff -c -r --strip-trailing-cr -N tmp/src/kblib.c src/kblib.c
 + }
 diff -c -r --strip-trailing-cr -N tmp/src/sound.c src/sound.c
 *** tmp/src/sound.c	Wed Dec 31 18:00:00 1969
---- src/sound.c	Mon Oct 19 14:27:32 2026
+--- src/sound.c	Tue Oct 20 10:30:29 2026
 ***************
 *** 0 ****
---- 1,622 ----
+--- 1,625 ----
 + /*-
 +  *
 +  * Copyright (c) 2026 Zach Metzinger
@@ -6736,8 +6739,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/sound.c src/sound.c
 + static volatile byte env_duty = 0;
 + static volatile byte env_part = 0;
 + static volatile byte env_idx = 0;
-+ static volatile char a_lev, a_rate, h_lev, h_rate;
-+ static volatile char d_rate = 1;
++ static volatile char a_lev, a_rate, h_lev, h_rate, d_rate;
 + 
 + static volatile byte save_sp;
 + static volatile byte save_bank;
@@ -6860,9 +6862,10 @@ diff -c -r --strip-trailing-cr -N tmp/src/sound.c src/sound.c
 +   sec
 +   sbc #1
 +   sta env_duty
-+   bne m_load_psg_duty_write
++   bpl m_load_psg_duty_write
 +   lda #1
 +   sta env_duty
++   jmp m_load_psg_duty_write
 + m_hold:
 +   lda env_duty
 +   cmp h_lev
@@ -7106,8 +7109,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/sound.c src/sound.c
 +     inx
 +     lda music2,x /* low byte of note time. high-byte is unused (waste!) */
 +     sta note_time
-+     sec
-+     sbc #10
++     lsr
 +     sta note_hold
 +     jmp m_load_psg_freq
 + m2_2nd_half:
@@ -7129,8 +7131,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/sound.c src/sound.c
 +     inx
 +     lda music2+$100,x /* low byte of note time. high-byte is unused (waste!) */
 +     sta note_time
-+     sec
-+     sbc #10
++     lsr
 +     sta note_hold
 +     jmp m_load_psg_freq
 + m2_3rd_half:
@@ -7152,8 +7153,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/sound.c src/sound.c
 +     inx
 +     lda music2+$200,x /* low byte of note time. high-byte is unused (waste!) */
 +     sta note_time
-+     sec
-+     sbc #10
++     lsr
 +     sta note_hold
 +     jmp m_load_psg_freq    
 + m2_restart:
@@ -7195,6 +7195,8 @@ diff -c -r --strip-trailing-cr -N tmp/src/sound.c src/sound.c
 +   sta h_lev
 +   lda #$12
 +   sta h_rate
++   lda #$1
++   sta d_rate
 +   jmp m1_on
 + m_type_0:
 +   /* chase music */
@@ -7204,6 +7206,8 @@ diff -c -r --strip-trailing-cr -N tmp/src/sound.c src/sound.c
 +   sta h_lev
 +   lda #$12
 +   sta h_rate
++   lda #$4
++   sta d_rate
 +   jmp m0_on
 + m_type_2:
 +   /* death music */
@@ -7211,8 +7215,10 @@ diff -c -r --strip-trailing-cr -N tmp/src/sound.c src/sound.c
 +   sta a_rate
 +   lda #$1f
 +   sta h_lev
-+   lda #$06
++   lda #$12
 +   sta h_rate
++   lda #$1
++   sta d_rate
 +   jmp m2_on
 + }
 + 
@@ -7267,7 +7273,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/sound.c src/sound.c
 + void sn2_init(void)
 + {
 +   snd_on(0);
-+   snd_duty(0, 0x3f);
++   snd_duty(0, 0x1f);
 +   
 +   if (oldisr == 0x0000) {
 +     /* Chain ourselves to the CINT routine */
@@ -7313,10 +7319,10 @@ diff -c -r --strip-trailing-cr -N tmp/src/sound.c src/sound.c
 + }
 diff -c -r --strip-trailing-cr -N tmp/src/stubs.c src/stubs.c
 *** tmp/src/stubs.c	Wed Dec 31 18:00:00 1969
---- src/stubs.c	Mon Sep 28 11:21:36 2026
+--- src/stubs.c	Mon Oct 19 14:49:30 2026
 ***************
 *** 0 ****
---- 1,656 ----
+--- 1,659 ----
 + /*-
 +  *
 +  * Copyright (c) 2026 Zach Metzinger
@@ -7717,7 +7723,10 @@ diff -c -r --strip-trailing-cr -N tmp/src/stubs.c src/stubs.c
 +       joyy = 255;
 +     }
 +     /* Process fire */
-+     if (!(a & JOY_B)) {
++     if (!(a & JOY_B) ||
++ 	!(a & JOY_Y) ||
++ 	!(x & JOY_A) ||
++ 	!(x & JOY_X)) {
 +       /* Fire button pressed */
 +       butt1 = 1;
 +     }
@@ -7974,7 +7983,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/stubs.c src/stubs.c
 +   return;
 + }
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/clib.c src/windmill/clib.c
-*** tmp/src/windmill/clib.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/clib.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/clib.c	Fri Sep 25 15:09:50 2026
 ***************
 *** 130,175 ****
@@ -8235,7 +8244,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/clib.c src/windmill/clib.c
 \ No newline at end of file
 --- 354,356 ----
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/image.c src/windmill/image.c
-*** tmp/src/windmill/image.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/image.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/image.c	Tue Sep  8 09:50:42 2026
 ***************
 *** 3,16 ****
@@ -8581,7 +8590,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/image.c src/windmill/image.c
   	sp_disp();
   }
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/image_b.c src/windmill/image_b.c
-*** tmp/src/windmill/image_b.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/image_b.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/image_b.c	Tue Sep  8 09:50:42 2026
 ***************
 *** 4,10 ****
@@ -8999,7 +9008,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/image_b.c src/windmill/image_
 \ No newline at end of file
 --- 485,487 ----
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/ta.c src/windmill/ta.c
-*** tmp/src/windmill/ta.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/ta.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/ta.c	Tue Sep  8 09:50:42 2026
 ***************
 *** 14,25 ****
@@ -9405,7 +9414,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/ta.c src/windmill/ta.c
 !    
   
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/tb.c src/windmill/tb.c
-*** tmp/src/windmill/tb.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/tb.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/tb.c	Tue Sep  8 09:50:42 2026
 ***************
 *** 31,39 ****
@@ -9733,7 +9742,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/tb.c src/windmill/tb.c
 \ No newline at end of file
 --- 655,657 ----
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/tc.c src/windmill/tc.c
-*** tmp/src/windmill/tc.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/tc.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/tc.c	Tue Sep  8 09:50:42 2026
 ***************
 *** 14,20 ****
@@ -10132,7 +10141,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/tc.c src/windmill/tc.c
 \ No newline at end of file
 --- 721,723 ----
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/td.c src/windmill/td.c
-*** tmp/src/windmill/td.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/td.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/td.c	Tue Sep  8 09:50:42 2026
 ***************
 *** 14,29 ****
@@ -10252,7 +10261,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/td.c src/windmill/td.c
 \ No newline at end of file
 --- 175,177 ----
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/te.c src/windmill/te.c
-*** tmp/src/windmill/te.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/te.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/te.c	Mon Sep 28 11:13:19 2026
 ***************
 *** 14,20 ****
@@ -10357,7 +10366,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/te.c src/windmill/te.c
   
   }
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/tf.c src/windmill/tf.c
-*** tmp/src/windmill/tf.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/tf.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/tf.c	Tue Sep  8 09:50:42 2026
 ***************
 *** 10,15 ****
@@ -10875,7 +10884,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/tf.c src/windmill/tf.c
 \ No newline at end of file
 --- 582,584 ----
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/tg.c src/windmill/tg.c
-*** tmp/src/windmill/tg.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/tg.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/tg.c	Tue Sep  8 09:50:42 2026
 ***************
 *** 14,19 ****
@@ -11005,8 +11014,8 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/tg.c src/windmill/tg.c
   
   }
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/th.c src/windmill/th.c
-*** tmp/src/windmill/th.c	Mon Oct 19 14:40:41 2026
---- src/windmill/th.c	Mon Oct 19 13:56:20 2026
+*** tmp/src/windmill/th.c	Tue Oct 20 11:22:14 2026
+--- src/windmill/th.c	Mon Oct 19 15:51:57 2026
 ***************
 *** 17,27 ****
 --- 17,29 ----
@@ -11041,7 +11050,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/th.c src/windmill/th.c
   int	envelope, env_position;
   
 ***************
-*** 79,85 ****
+*** 79,95 ****
   	AS4,NQ, C5,NQ, C5,NQ, C5,NQ, B4,NQ, C5,12,
   */
   
@@ -11049,7 +11058,17 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/th.c src/windmill/th.c
   int	music0[] = { 	/* music for bonus round */
   	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, F4,NQ, G4,NQ, A4,NQ,
   	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, F4,NE, A4,NE, G4,NQ, E4,NQ, C4,NQ,
---- 81,89 ----
+  	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, F4,NQ, G4,NQ, A4,NQ,
+! 	F4,NE, A4,NE, C5,10, AS4,NE, A4,NE, G4,NE, F4,NQ, A4,NQ, F4,NQ, 
+  
+  	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, F4,NQ, G4,NQ, A4,NQ,
+  	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, F4,NE, A4,NE, G4,NQ, E4,NQ, C4,NQ,
+  	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, F4,NQ, G4,NQ, A4,NQ,
+! 	F4,NE, A4,NE, C5,10, AS4,NE, A4,NE, G4,NE, F4,NQ, A4,NQ, F4,NQ, 
+  
+  	A4,NE, A4,NE, A4,NQ, A4,NE, A4,NE, A4,NQ, A4,NE, A4,NE, A4,NQ, 
+  	D5,NQ, A4,NQ, D5,NQ, A4,NQ, D5,NQ, A4,NQ, G4,NQ, F4,NQ, E4,NQ, D4,NQ,
+--- 81,99 ----
   	AS4,NQ, C5,NQ, C5,NQ, C5,NQ, B4,NQ, C5,12,
   */
   
@@ -11059,8 +11078,22 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/th.c src/windmill/th.c
   int	music0[] = { 	/* music for bonus round */
   	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, F4,NQ, G4,NQ, A4,NQ,
   	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, F4,NE, A4,NE, G4,NQ, E4,NQ, C4,NQ,
+  	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, F4,NQ, G4,NQ, A4,NQ,
+! 	F4,NE, A4,NE, C5,NHH, AS4,NE, A4,NE, G4,NE, F4,NQ, A4,NQ, F4,NQ, 
+  
+  	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, F4,NQ, G4,NQ, A4,NQ,
+  	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, F4,NE, A4,NE, G4,NQ, E4,NQ, C4,NQ,
+  	C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, C4,NQ, C4,NE, C4,NE, F4,NQ, G4,NQ, A4,NQ,
+! 	F4,NE, A4,NE, C5,NHH, AS4,NE, A4,NE, G4,NE, F4,NQ, A4,NQ, F4,NQ, 
+  
+  	A4,NE, A4,NE, A4,NQ, A4,NE, A4,NE, A4,NQ, A4,NE, A4,NE, A4,NQ, 
+  	D5,NQ, A4,NQ, D5,NQ, A4,NQ, D5,NQ, A4,NQ, G4,NQ, F4,NQ, E4,NQ, D4,NQ,
 ***************
-*** 141,152 ****
+*** 137,152 ****
+  
+  
+  int	music2[] = { 	/* music for death of man */
+! 	REST,NE, C4,6, C4,NQ, C4,NE, C4,6, DS4,NQ, D4,NE, D4,NQ, C4,NE, C4,NQ, B3,NE, C4,12,
   	REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, 
   		32100 };
   
@@ -11073,7 +11106,11 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/th.c src/windmill/th.c
   
   	while (tick==0) {	/* wait for tick to be zero */
   		flag=flag;
---- 145,159 ----
+--- 141,159 ----
+  
+  
+  int	music2[] = { 	/* music for death of man */
+! 	REST,NE, C4,NQH, C4,NQ, C4,NE, C4,NQH, DS4,NQ, D4,NE, D4,NQ, C4,NE, C4,NQ, B3,NE, C4,NWL,
   	REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, REST,NW, 
   		32100 };
   
@@ -11986,7 +12023,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/th.c src/windmill/th.c
   
   }
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/tx.c src/windmill/tx.c
-*** tmp/src/windmill/tx.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/tx.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/tx.c	Tue Sep  8 09:50:42 2026
 ***************
 *** 11,21 ****
@@ -12139,7 +12176,7 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/tx.c src/windmill/tx.c
 \ No newline at end of file
 --- 364,366 ----
 diff -c -r --strip-trailing-cr -N tmp/src/windmill/tz.c src/windmill/tz.c
-*** tmp/src/windmill/tz.c	Mon Oct 19 14:40:41 2026
+*** tmp/src/windmill/tz.c	Tue Oct 20 11:22:14 2026
 --- src/windmill/tz.c	Mon Sep 28 11:12:59 2026
 ***************
 *** 16,28 ****
@@ -12870,10 +12907,10 @@ diff -c -r --strip-trailing-cr -N tmp/src/windmill/tz.c src/windmill/tz.c
 --- 709,711 ----
 diff -c -r --strip-trailing-cr -N tmp/src/x16_memory.c src/x16_memory.c
 *** tmp/src/x16_memory.c	Wed Dec 31 18:00:00 1969
---- src/x16_memory.c	Mon Oct 19 14:37:24 2026
+--- src/x16_memory.c	Tue Oct 20 11:21:12 2026
 ***************
 *** 0 ****
---- 1,51 ----
+--- 1,50 ----
 + /*-
 +  *
 +  * Copyright (c) 2026 Zach Metzinger
@@ -12923,5 +12960,4 @@ diff -c -r --strip-trailing-cr -N tmp/src/x16_memory.c src/x16_memory.c
 + #pragma overlay( DIGHIMEM3, 3 )
 + 
 + #define X16_DIGGER_VERSION_MAJOR 1
-+ #define X16_DIGGER_VERSION_MINOR 3
-+ 
++ #define X16_DIGGER_VERSION_MINOR 4
